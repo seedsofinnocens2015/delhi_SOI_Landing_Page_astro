@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+.animated-underline {
+  position: relative;
+  display: inline-block;
+}
+.animated-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 3px;
+  width: 0;
+  background: #dc2626; /* Tailwind red-600 */
+  border-radius: 6px;
+  transition: width 0.3s cubic-bezier(.4,0,.2,1);
+}
+.group:hover .animated-underline::after {
+  width: 100%;
+}
