@@ -51,8 +51,8 @@ const ContactForm = ({
       const submissionPayload = { ...formData, source: normalizedSource };
 
       const resp = await fetch(
-        // 'https://soi-landing-page-backend.vercel.app/api/leadsquared/lead',
-        'http://localhost:4000/api/leadsquared/lead',
+        'https://soi-landing-page-backend.vercel.app/api/leadsquared/lead',
+        // 'http://localhost:4000/api/leadsquared/lead',
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
