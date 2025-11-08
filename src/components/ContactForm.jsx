@@ -7,7 +7,8 @@ const ContactForm = ({
   showDisclaimer = true,
   className = "",
   onSubmit = null,
-  onClose = null
+  onClose = null,
+  leadSource = "Delhi Google Ads"
 }) => {
   const [formData, setFormData] = useState({
     firstName: '',
@@ -46,12 +47,16 @@ const ContactForm = ({
     if (!isFormValid()) return;
 
     try {
+      const normalizedSource = (leadSource || '').trim() || 'Google ads';
+      const submissionPayload = { ...formData, source: normalizedSource };
+
       const resp = await fetch(
-        'https://soi-landing-page-backend.vercel.app/api/leadsquared/lead',
+        // 'https://soi-landing-page-backend.vercel.app/api/leadsquared/lead',
+        'http://localhost:4000/api/leadsquared/lead',
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(formData)
+          body: JSON.stringify(submissionPayload)
         }
       );
 
@@ -72,7 +77,7 @@ const ContactForm = ({
       }
 
       if (onSubmit) {
-        onSubmit(formData);
+        onSubmit(submissionPayload);
       }
 
       setIsSubmitted(true);

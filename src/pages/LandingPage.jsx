@@ -2,7 +2,6 @@ import React, { useState, useEffect, Suspense, useRef } from 'react'
 const ContactForm = React.lazy(() => import('../components/ContactForm'))
 const HeroMobile = React.lazy(() => import('../components/HeroMobile'))
 const FloatingConsultButton = React.lazy(() => import('../components/FloatingConsultButton'))
-import LazyGoogleMap from '../components/LazyGoogleMap'
 
 const LandingPage = () => {
   const [isContactOpen, setIsContactOpen] = useState(false)
