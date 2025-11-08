@@ -55,46 +55,74 @@ const LandingPage = () => {
     },
   ]
 
+  const centers = [
+    {
+      name: 'Malviya Nagar',
+      city: 'New Delhi',
+      image: '/gads/nov25/delhi/Images/malviyanagar.webp',
+      address:
+        '3, opposite Aurbindo College, MMTC Colony, Malviya Nagar, New Delhi, Delhi 110017',
+      mapLink:
+        'https://www.google.com/maps/place/Seeds+of+Innocens+IVF+Centre+-+Best+IVF+Centre+in+Delhi+%7C+Fertility+Clinics/@28.5330212,77.1940858,16z/data=!4m10!1m2!2m1!1sSeeds+of+Innocens+IVF+Centre+-+Best+IVF+Centre+in+Delhi+%7C+Fertility+Clinics!3m6!1s0x390ce20320e1d805:0x7d88d4bcd484e5ec!8m2!3d28.5330212!4d77.203613!15sCktTZWVkcyBvZiBJbm5vY2VucyBJVkYgQ2VudHJlIC0gQmVzdCBJVkYgQ2VudHJlIGluIERlbGhpIHwgRmVydGlsaXR5IENsaW5pY3NaSSJHc2VlZHMgb2YgaW5ub2NlbnMgaXZmIGNlbnRyZSBiZXN0IGl2ZiBjZW50cmUgaW4gZGVsaGkgZmVydGlsaXR5IGNsaW5pY3OSARBmZXJ0aWxpdHlfY2xpbmljqgFwEAEyHxABIhuJyBi5yzAT3cNBHyTvPiqNL5m2UgkGGVF34nUySxACIkdzZWVkcyBvZiBpbm5vY2VucyBpdmYgY2VudHJlIGJlc3QgaXZmIGNlbnRyZSBpbiBkZWxoaSBmZXJ0aWxpdHkgY2xpbmljc-ABAA!16s%2Fg%2F11clydmvm7?entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D',
+    },
+    {
+      name: 'Ghaziabad',
+      city: 'Delhi NCR',
+      image: '/gads/nov25/delhi/Images/Yashoda1.webp',
+      address: 'opp. Nehru Stadium Jogging Track, Ram Nagar, Pocket L, Nehru Nagar III, Nehru Nagar, Ghaziabad, Delhi 201001',
+      mapLink: 'https://www.google.com/maps/place/Seeds+of+Innocens+IVF+Centre-+Best+IVF+Centre+in+Ghaziabad+%7C+Fertility+Clinic/@28.6593349,77.3378576,12z/data=!4m10!1m2!2m1!1sSeeds+of+Innocens+IVF+Ghaziabad!3m6!1s0x390cf1c5b4d8b201:0x6502bf0f722f09a5!8m2!3d28.6598934!4d77.4385815!15sCh9TZWVkcyBvZiBJbm5vY2VucyBJVkYgR2hhemlhYmFkWiEiH3NlZWRzIG9mIGlubm9jZW5zIGl2ZiBnaGF6aWFiYWSSARBmZXJ0aWxpdHlfY2xpbmljmgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVVJDYkVvMmJWbFJFQUWqAWMQASoZIhVzZWVkcyBvZiBpbm5vY2VucyBpdmYoADIfEAEiG9WT_ViaJ7qs9spH1fhFaNDEKuw7F9-yOqwSeDIjEAIiH3NlZWRzIG9mIGlubm9jZW5zIGl2ZiBnaGF6aWFiYWTgAQD6AQQIABA2!16s%2Fg%2F11hbc4c3ph?entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D',
+    },
+    {
+      name: 'Gurugram',
+      city: 'Delhi NCR',
+      image: '/gads/nov25/delhi/Images/Gurugram2.webp',
+      address: 'Plot No-2, near Nagar Nigam Office, Sector 42, Gurugram, Haryana 122009',
+      mapLink: 'https://www.google.com/maps/place/Seeds+of+Innocens+IVF+Centre+-+Best+IVF+Centre+in+Gurugram+%7C+Fertility+Clinic/@28.4620576,77.0969941,17z/data=!3m1!4b1!4m6!3m5!1s0x390d193adc6980c3:0xf93927ab31cdcf44!8m2!3d28.4620529!4d77.099569!16s%2Fg%2F11y6f_3vpf?entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D'
+    },
+    {
+      name: 'Pitampura',
+      city: 'Delhi',
+      image: '/gads/nov25/delhi/Images/pitampura.webp',
+      address: 'Plot No. 1 First Floor, Shiva Enclave Pitampura, near Harsh Vihar, Chowk, Delhi, 110034',
+      mapLink: 'https://www.google.com/maps/place/Seeds+of+innocens+IVF+Centre+%7C+IVF+Centre+In+Pitampura,+Delhi/@28.6519639,76.8932374,10.5z/data=!3m1!5s0x390d03dad287c6b1:0x168ab51c770aeb50!4m6!3m5!1s0x390d0394c2226b3f:0x13bced4418695d5e!8m2!3d28.6955566!4d77.1346906!16s%2Fg%2F11m5f52syv?entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D',
+    },
+    {
+      name: 'Faridabad',
+      city: 'Delhi NCR',
+      image: '/gads/nov25/delhi/Images/Faridabad1.webp',
+      address: 'A-6/A, Neelam Bata Rd, Above ICICI Bank, Nehru Ground, New Industrial Twp 1 Faridabad, Haryana 121001',
+      mapLink: 'https://www.google.com/maps/place/Seeds+of+Innocens+IVF+Centre+-+Best+IVF+Centre+in+Faridabad,+Haryana/@28.3883225,77.3034598,17z/data=!3m1!4b1!4m6!3m5!1s0x390cdd1305e1e9f9:0x70bda375cf894213!8m2!3d28.3883178!4d77.3060347!16s%2Fg%2F11f5tv567l?entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D',
+    },
+  ]
+
   const testimonials = [
     {
-      name: 'Tulsi Academy',
-      role: 'Content Creator',
-      initials: 'TA',
       stars: 5,
       text:
         'Thanks for Seeds of Innocence Team. Seeds of innocence team ka work bhout hi achha h. Hme first time m hi success mili. Price k according facilities kafi achhi h. special thanks to Lisha maam',
-      videoId: 'wpnZA90hG40',
-      link: 'https://www.youtube.com/watch?v=wpnZA90hG40',
+      videoId: '0XD9OrkunWI',
+      link: 'https://www.youtube.com/watch?v=0XD9OrkunWI',
     },
     {
-      name: 'Rambabu Yadav',
-      role: 'Content Creator',
-      initials: 'RY',
       stars: 5,
       text:
         'It was a great experience to consult Dr. Gauri Ma’am. After getting treatment from SOI we got positive pregnancy. HIGHLY GRATEFUL TO Dr. Lisha and SOI team.',
-      videoId: 'zlq0b7kg7QU',
-      link: 'https://www.youtube.com/watch?v=zlq0b7kg7QU',
+      videoId: '5o6SdAfQvWk',
+      link: 'https://www.youtube.com/watch?v=5o6SdAfQvWk',
     },
     {
-      name: 'Tulsi Academy',
-      role: 'Content Creator',
-      initials: 'TA',
       stars: 5,
       text:
         'Thanks for Seeds of Innocence Team. Seeds of innocence team ka work bhout hi achha h. Hme first time m hi success mili. Price k according facilities kafi achhi h. special thanks to Lisha maam',
-      videoId: 'o_hjhUSFN7U',
-      link: 'https://www.youtube.com/watch?v=zlhyWV7RMaA',
+      videoId: '0p-Z6YRXOSU',
+      link: 'https://www.youtube.com/watch?v=0p-Z6YRXOSU',
     },
     {
-      name: 'Donald Jackman',
-      role: 'Content Creator',
-      initials: 'DJ',
       stars: 5,
       text:
         "I've been using Imagify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.",
-      videoId: '7aSViXkirBY',
-      link: 'https://www.youtube.com/watch?v=7aSViXkirBY',
+      videoId: 'bGZVBvJyYbc',
+      link: 'https://www.youtube.com/watch?v=bGZVBvJyYbc',
     },
   ]
 
@@ -111,7 +139,7 @@ const LandingPage = () => {
   return (
     <>
       {/* Header Component */}
-      <header className="w-full">
+      <header className="fixed top-0 left-0 right-0 w-full bg-white z-50 shadow-lg">
         <div className="mx-auto max-w-7xl flex items-center justify-start sm:justify-between gap-35 px-2 py-1">
           {/* logo */}
           <a href="/" className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
@@ -142,7 +170,7 @@ const LandingPage = () => {
           </div>
         </div>
       </header>
-
+      <div className="pt-[45px] sm:pt-[65px]">
       {/* Hero Component */}
       <Suspense fallback={null}>
         <HeroMobile className="sm:hidden" />
@@ -168,7 +196,7 @@ const LandingPage = () => {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {/* Main Heading */}
           <h2 className="text-center text-2xl sm:text-3xl lg:text-4xl font-bold text-red-600 mb-4 sm:mb-6">
-            Best IVF Centre in Uttar Pradesh
+            Best IVF Centre in Delhi
           </h2>
 
           {/* Description Paragraph */}
@@ -353,7 +381,7 @@ const LandingPage = () => {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {/* Main Heading */}
           <h2 className="text-center text-2xl sm:text-3xl lg:text-4xl font-bold text-red-600 mb-4 sm:mb-6">
-            Best IVF Specialists & IVF Doctors in Uttar Pradesh
+            Best IVF Specialists & IVF Doctors in Delhi
           </h2>
           {/* Doctors - Mobile 2 Rows Grid */}
           <div className="sm:hidden mt-4">
@@ -549,15 +577,6 @@ const LandingPage = () => {
                 </div>
                 {/* Body */}
                 <div className="p-4">
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="h-9 w-9 rounded-full bg-gray-900 text-white flex items-center justify-center text-sm font-semibold transition-all duration-300 group-hover:bg-red-600">
-                      {t.initials}
-                    </div>
-                    <div>
-                      <p className="text-gray-900 font-medium leading-none">{t.name}</p>
-                      <p className="text-gray-500 text-xs">{t.role}</p>
-                    </div>
-                  </div>
                   <div className="flex items-center gap-1 text-red-500 mb-2" aria-label={`${t.stars} star rating`}>
                     {Array.from({ length: 5 }).map((_, i) => (
                       <svg
@@ -571,7 +590,7 @@ const LandingPage = () => {
                       </svg>
                     ))}
                   </div>
-                  <p className="text-sm text-gray-700 line-clamp-4 mb-3 transition-all duration-300 group-hover:-translate-y-1 group-hover:text-black">
+                  <p className="text-sm text-gray-700 text-justify mb-3 transition-all duration-300 group-hover:-translate-y-1 group-hover:text-black">
                     {t.text}
                   </p>
                   <a
@@ -580,7 +599,7 @@ const LandingPage = () => {
                     rel="noreferrer"
                     className="inline-block text-sm font-medium text-red-600 hover:text-white hover:bg-red-600 transition-colors duration-200 px-3 py-1 rounded-lg group-hover:shadow"
                   >
-                    Read more
+                    Watch Video
                   </a>
                 </div>
               </article>
@@ -789,28 +808,107 @@ const LandingPage = () => {
           <h2 className="text-center text-2xl sm:text-3xl lg:text-4xl font-bold text-red-600 mb-4 sm:mb-6">
             About Seeds of Innocens IVF Centre Delhi
           </h2>
-          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 p-4 sm:p-8">
-            {/* Building image */}
-            <div className="w-full max-w-xl flex-shrink-0">
-              <img
-                src="/gads/nov25/delhi/Images/Untitled-2 1.webp"
-                alt="Seeds of Innocens IVF Centre Delhi building"
-                className="rounded-sm w-full h-auto object-cover shadow"
-                loading="lazy"
-              />
+          <div className="p-4">
+            {/* Delhi Centers Mobile Grid */}
+            <div className="sm:hidden mt-4">
+              <div className="grid grid-cols-2 gap-3">
+                {centers.map((center) => (
+                  <div
+                    key={center.name}
+                    className="flex flex-col items-center text-center group transition-all duration-300"
+                  >
+                    <div className="relative w-full aspect-[6/6] rounded-lg overflow-hidden shadow-md bg-white border border-gray-200 transition-all duration-300 group-hover:shadow-lg group-hover:border-red-400">
+                      <img
+                        src={center.image}
+                        alt={center.name}
+                        className="h-full w-full object-cover transition-all duration-300 group-hover:scale-105"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h3 className="mt-2 text-red-600 font-bold tracking-wide text-xs leading-tight">{center.name}</h3>
+                    <p className="mt-0.5 text-gray-700 text-[10px] uppercase">{center.city}</p>
+                    <p className="text-gray-600 text-[10px] line-clamp-3">{center.address}</p>
+                    <a
+                      href={center.mapLink}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-1 inline-flex items-center gap-1 text-[10px] font-semibold text-red-600 hover:text-red-700"
+                    >
+                      View on Map
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        className="h-3 w-3"
+                      >
+                        <path d="M12 2.25c-3.728 0-6.75 3.022-6.75 6.75 0 4.989 6.75 12.75 6.75 12.75s6.75-7.761 6.75-12.75c0-3.728-3.022-6.75-6.75-6.75Zm0 9.75a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z" />
+                      </svg>
+                    </a>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Delhi Centers Grid (Tablet/Desktop) */}
+            <div className="hidden sm:grid grid-cols-1 mt-20 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8 mb-10">
+              {centers.map((center) => (
+                <div
+                  key={center.name}
+                  className="flex flex-col items-center text-center group transition-all duration-300"
+                >
+                  <div className="relative w-full max-w-[280px] aspect-[3/4] rounded-xl overflow-hidden shadow-md bg-white border-2 border-gray-200 transition-all duration-300 group-hover:shadow-2xl group-hover:border-red-400 group-hover:-translate-y-2">
+                    <img
+                      src={center.image}
+                      alt={center.name}
+                      className="h-full w-full object-cover transition-all duration-500 group-hover:scale-105 group-hover:brightness-75 group-hover:saturate-150"
+                      loading="lazy"
+                    />
+
+                    <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-black/50 opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-all duration-300 px-6 text-center">
+                      <p className="text-white text-[12px] leading-6">
+                        {center.address}
+                      </p>
+                      <a
+                        href={center.mapLink}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center gap-2 bg-red-600 text-white px-4 py-2 rounded-md text-[10px] font-semibold hover:bg-red-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-red-400"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          className="h-5 w-5"
+                        >
+                          <path d="M12 2.25c-3.728 0-6.75 3.022-6.75 6.75 0 4.989 6.75 12.75 6.75 12.75s6.75-7.761 6.75-12.75c0-3.728-3.022-6.75-6.75-6.75Zm0 9.75a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z" />
+                        </svg>
+
+                      </a>
+                    </div>
+                  </div>
+
+                  <h3 className="mt-4 text-red-600 font-extrabold tracking-wide uppercase text-lg sm:text-lg transition-all duration-300 group-hover:underline group-hover:decoration-2 group-hover:decoration-red-600">
+                    {center.name}
+                  </h3>
+                  <p className="text-gray-700 text-base">{center.city}</p>
+                  <span className="sr-only">{center.address}</span>
+                </div>
+              ))}
             </div>
 
             {/* Text + CTA */}
-            <div className="flex-1 flex flex-col justify-center lg:justify-start mt-7 lg:mt-0">
-              <p className="text-gray-900 text-base sm:text-lg mb-3 leading-snug">
-                Seeds of Innocens IVF is a renowned infertility centre that specializes in delivering successful fertility treatments at the forefront of innovative artificial reproductive technology.
-              </p>
-              <p className="text-gray-900 text-base sm:text-lg mb-3 leading-snug">
-                The team of experts at Seeds of Innocens IVF in Delhi includes exceptional professionals such as consultant fertility specialists, sonographers, embryologists, nurses and counselors who work together to provide the highest quality treatment to couples seeking parenthood in the most caring and nurturing environment possible.
-              </p>
-              <p className="text-gray-900 text-base sm:text-lg mb-6 leading-snug">
-                The infertility centre boasts of all the latest equipment and technologies that are designed to provide the most effective treatments in response to infertility problems faced by childless couples.
-              </p>
+            <div className="flex-1 flex flex-col items-center justify-center lg:justify-start mt-7 lg:mt-0">
+              <div className="text-center text-gray-800 text-sm sm:text-base leading-6 max-w-5xl mx-auto mb-8 sm:mb-10 lg:mb-12 px-2 space-y-4">
+                <p>
+                  Seeds of Innocens IVF is a renowned infertility centre that specialises in delivering successful fertility treatments at the forefront of innovative assisted reproductive technology.
+                </p>
+                <p>
+                  The team of experts at Seeds of Innocens IVF in Delhi includes exceptional professionals such as consultant fertility specialists, sonographers, embryologists, nurses, and counsellors who collaborate to provide the highest quality treatment in a caring and nurturing environment.
+                </p>
+                <p>
+                  The infertility centre boasts state-of-the-art equipment and technologies designed to offer the most effective treatments for couples facing fertility challenges.
+                </p>
+              </div>
               <button
                 onClick={() => setIsContactOpen(true)}
                 className="bg-red-600 text-white px-6 py-3 rounded-lg font-bold text-lg shadow hover:bg-red-700 active:bg-red-800 focus:outline-none mt-2 w-full max-w-xs text-center"
@@ -824,49 +922,28 @@ const LandingPage = () => {
       </section>
 
       {/* Map & Contact Information Component */}
-      <section className="w-full py-8 sm:py-12 lg:py-16">
+      <section className="w-full py-8 sm:py-12 lg:py-16 flex justify-center items-center">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row gap-8">
-            {/* Address + Details Card */}
-            <div className="w-full lg:w-1/2 flex flex-col">
-              <div className=" p-5 sm:p-6">
-                <h3 className="font-bold text-xl sm:text-2xl text-gray-900 leading-snug">Seeds of Innocens - Best IVF Centre in Delhi | Fertility Clinics</h3>
-                <div className="mt-4 space-y-3">
-                  <div className="flex items-start gap-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5 text-red-600 mt-0.5 flex-shrink-0"><path d="M6.75 3A2.25 2.25 0 0 0 4.5 5.25v13.5A2.25 2.25 0 0 0 6.75 21h10.5A2.25 2.25 0 0 0 19.5 18.75V5.25A2.25 2.25 0 0 0 17.25 3H6.75Zm1.5 3h7.5a.75.75 0 0 1 0 1.5h-7.5A.75.75 0 0 1 8.25 6Zm0 3h7.5a.75.75 0 0 1 0 1.5h-7.5a.75.75 0 0 1 0-1.5Zm0 3h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5Z" /></svg>
-                    <p className="text-base sm:text-lg text-gray-900">
-                      <span className="font-semibold">Open Days:</span> All Days <span className="text-gray-500">(Monday to Sunday)</span>
-                    </p>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5 text-red-600 mt-0.5 flex-shrink-0"><path d="M12 1.5a.75.75 0 0 1 .75.75V3h2.25a.75.75 0 0 1 0 1.5H12.75v2.25a.75.75 0 0 1-1.5 0V4.5H9a.75.75 0 0 1 0-1.5h2.25V2.25A.75.75 0 0 1 12 1.5Zm-6 4.5A2.25 2.25 0 0 0 3.75 8.25v9A2.25 2.25 0 0 0 6 19.5h12a2.25 2.25 0 0 0 2.25-2.25v-9A2.25 2.25 0 0 0 18 6H6Z" /></svg>
-                    <p className="text-base sm:text-lg text-gray-900">
-                      <span className="font-semibold">Timings:</span> 9:00 AM to 6:00 PM
-                    </p>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5 text-red-600 mt-0.5 flex-shrink-0"><path d="M12 2.25c-3.728 0-6.75 3.022-6.75 6.75 0 4.989 6.75 12.75 6.75 12.75s6.75-7.761 6.75-12.75c0-3.728-3.022-6.75-6.75-6.75Zm0 9.75a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z" /></svg>
-                    <p className="text-base sm:text-lg text-gray-900">
-                      <span className="font-semibold">Address:</span> 3, opp. Aurbindo College, MMTC Colony, Malviya Nagar, South Delhi, Delhi 110017
-                    </p>
-                  </div>
-                </div>
-                <div className="mt-5 flex flex-wrap gap-3">
-                  <a href="https://www.google.com/maps/place/Seeds+of+Innocens+IVF+Centre+-+Best+IVF+Centre+in+Delhi+%7C+Fertility+Clinics/@28.533021,77.203613,17z/data=!4m6!3m5!1s0x390ce20320e1d805:0x7d88d4bcd484e5ec!8m2!3d28.5330212!4d77.203613!16s%2Fg%2F11clydmvm7?hl=en&entry=ttu&g_ep=EgoyMDI1MTAyOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 bg-red-600 text-white px-4 py-2 rounded-md text-sm font-semibold hover:bg-red-700 transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5 text-white mt-0.5 flex-shrink-0"><path d="M12 2.25c-3.728 0-6.75 3.022-6.75 6.75 0 4.989 6.75 12.75 6.75 12.75s6.75-7.761 6.75-12.75c0-3.728-3.022-6.75-6.75-6.75Zm0 9.75a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z" /></svg>
-                    Get Directions
-                  </a>
-                  <a href="tel:+919810350512" className="inline-flex items-center gap-2 border border-gray-300 text-gray-800 px-4 py-2 rounded-md text-sm font-semibold hover:border-red-400 hover:text-red-600 transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4"><path d="M2.25 4.5c0-1.243 1.007-2.25 2.25-2.25h3A2.25 2.25 0 0 1 9.75 4.5v1.38c0 .57-.225 1.118-.626 1.52l-1.2 1.2a1.5 1.5 0 0 0-.3 1.71 12.03 12.03 0 0 0 6.066 6.066 1.5 1.5 0 0 0 1.71-.3l1.2-1.2c.402-.401.95-.626 1.52-.626H19.5A2.25 2.25 0 0 1 21.75 18v3A2.25 2.25 0 0 1 19.5 23.25C10.663 23.25 3.75 16.337 3.75 7.5A3 3 0 0 1 6.75 4.5H5.25A2.25 2.25 0 0 1 3 2.25 2.25 2.25 0 0 0 2.25 4.5Z" /></svg>
-                    Call Now
-                  </a>
-                </div>
+          <div className="flex flex-col items-center justify-center">
+            <h3 className="font-bold text-xl sm:text-2xl text-gray-900 leading-snug text-center">
+              Seeds of Innocens - Best IVF Centre in Delhi | Fertility Clinics
+            </h3>
+            <div className="mt-8 space-y-6 flex flex-col items-center justify-center">
+              <div className="flex items-center gap-3 justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5 text-red-600 mt-0.5 flex-shrink-0">
+                  <path d="M6.75 3A2.25 2.25 0 0 0 4.5 5.25v13.5A2.25 2.25 0 0 0 6.75 21h10.5A2.25 2.25 0 0 0 19.5 18.75V5.25A2.25 2.25 0 0 0 17.25 3H6.75Zm1.5 3h7.5a.75.75 0 0 1 0 1.5h-7.5A.75.75 0 0 1 8.25 6Zm0 3h7.5a.75.75 0 0 1 0 1.5h-7.5a.75.75 0 0 1 0-1.5Zm0 3h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5Z" />
+                </svg>
+                <p className="text-base sm:text-lg text-gray-900 text-center">
+                  <span className="font-semibold">Open Days:</span> All Days <span className="text-gray-500">(Monday to Sunday)</span>
+                </p>
               </div>
-            </div>
-            {/* Google Map */}
-            <div className="w-full lg:w-1/2 flex flex-col">
-              <div className="rounded-lg overflow-hidden shadow-sm border border-gray-200">
-                <LazyGoogleMap title="Seeds of Innocens IVF Centre Location" height={335} />
+              <div className="flex items-center gap-3 justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5 text-red-600 mt-0.5 flex-shrink-0">
+                  <path d="M12 1.5a.75.75 0 0 1 .75.75V3h2.25a.75.75 0 0 1 0 1.5H12.75v2.25a.75.75 0 0 1-1.5 0V4.5H9a.75.75 0 0 1 0-1.5h2.25V2.25A.75.75 0 0 1 12 1.5Zm-6 4.5A2.25 2.25 0 0 0 3.75 8.25v9A2.25 2.25 0 0 0 6 19.5h12a2.25 2.25 0 0 0 2.25-2.25v-9A2.25 2.25 0 0 0 18 6H6Z" />
+                </svg>
+                <p className="text-base sm:text-lg text-gray-900 text-center">
+                  <span className="font-semibold">Timings:</span> 9:00 AM to 6:00 PM
+                </p>
               </div>
             </div>
           </div>
@@ -909,6 +986,7 @@ const LandingPage = () => {
       <Suspense fallback={null}>
         <FloatingConsultButton />
       </Suspense>
+      </div>
     </>
   )
 }
