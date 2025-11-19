@@ -198,9 +198,9 @@ const LandingPage = () => {
         <section className="relative hidden sm:block w-full min-h-[500px] sm:h-[480px] lg:h-[620px]" aria-label="Hero">
           {/* Background image */}
           <img
-            src="/gads/nov25/delhi/Images/delhi-Banner.webp"
+            src="/gads/nov25/delhi/Images/New Delhi1.webp"
             alt="Happy family banner"
-            className="absolute inset-0 h-[480px] sm:h-[620px] w-full object-cover"
+            className="absolute inset-0 h-[480px] sm:h-[720px] w-full object-cover"
           />
           {/* Overlay form panel on the image */}
           <div className="absolute left-4 right-4 sm:left-20 sm:right-auto top-8 sm:top-16 flex justify-center sm:justify-start">
