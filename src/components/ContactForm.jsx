@@ -51,8 +51,9 @@ const ContactForm = ({
       const submissionPayload = { ...formData, source: normalizedSource };
 
       const resp = await fetch(
-        
-        'http://localhost:4000/api/landing-pages',
+        'https://soi.seedsofinnocens.com/api/landing-pages',
+        // 'http://localhost:4000/api/landing-pages',
+
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
